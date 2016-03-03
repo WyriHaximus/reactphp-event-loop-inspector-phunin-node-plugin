@@ -8,7 +8,7 @@ use WyriHaximus\PhuninNode\PluginInterface;
 use WyriHaximus\PhuninNode\Value;
 use WyriHaximus\React\Inspector\InfoProvider;
 
-class Stream implements PluginInterface
+class Streams implements PluginInterface
 {
     /**
      * @var InfoProvider
@@ -42,7 +42,7 @@ class Stream implements PluginInterface
      */
     public function getSlug()
     {
-        return 'streams';
+        return 'event_loop_streams';
     }
 
     /**
