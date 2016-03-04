@@ -63,9 +63,9 @@ class Streams implements PluginInterface
         }
 
         $this->configuration = new Configuration();
-        $this->configuration->setPair('graph_category', 'event_loop');
-        $this->configuration->setPair('graph_title', 'Streams');
-        $this->configuration->setPair('current_read_streams.label', 'Current Read Streams');
+        $this->configuration->setPair('graph_category',              'event_loop');
+        $this->configuration->setPair('graph_title',                 'Streams');
+        $this->configuration->setPair('current_read_streams.label',  'Current Read Streams');
         $this->configuration->setPair('current_write_streams.label', 'Current Write Streams');
 
         return \React\Promise\resolve($this->configuration);
@@ -78,7 +78,7 @@ class Streams implements PluginInterface
     {
         $counters = $this->infoProvider->getCounters();
         $storage = new \SplObjectStorage();
-        $storage->attach(new Value('current_read_streams', $counters['streams']['read']['current']));
+        $storage->attach(new Value('current_read_streams',  $counters['streams']['read']['current']));
         $storage->attach(new Value('current_write_streams', $counters['streams']['write']['current']));
         return \React\Promise\resolve($storage);
     }
