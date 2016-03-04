@@ -63,15 +63,15 @@ class Ticks implements PluginInterface
         }
 
         $this->configuration = new Configuration();
-        $this->configuration->setPair('graph_category',     'event_loop');
-        $this->configuration->setPair('graph_title',        'Ticks');
-        $storage->attach(new Value('streams_read_ticks',    'Read Stream ticks'));
-        $storage->attach(new Value('streams_total_ticks',   'Total Stream ticks'));
-        $storage->attach(new Value('streams_write_ticks',   'Write Stream ticks'));
-        $storage->attach(new Value('timers_once_ticks',     'One-off Timer ticks'));
-        $storage->attach(new Value('timers_periodic_ticks', 'Periodic Timer ticks'));
-        $storage->attach(new Value('ticks_future_ticks',    'Future ticks'));
-        $storage->attach(new Value('ticks_next_ticks',      'Next ticks'));
+        $this->configuration->setPair('graph_category',         'event_loop');
+        $this->configuration->setPair('graph_title',            'Callbacks Ticks');
+        $this->configuration->setPair('streams_read_ticks',    'Read Stream ticks');
+        $this->configuration->setPair('streams_total_ticks',   'Total Stream ticks');
+        $this->configuration->setPair('streams_write_ticks',   'Write Stream ticks');
+        $this->configuration->setPair('timers_once_ticks',     'One-off Timer ticks');
+        $this->configuration->setPair('timers_periodic_ticks', 'Periodic Timer ticks');
+        $this->configuration->setPair('ticks_future_ticks',    'Future ticks');
+        $this->configuration->setPair('ticks_next_ticks',      'Next ticks');
 
         return \React\Promise\resolve($this->configuration);
     }
