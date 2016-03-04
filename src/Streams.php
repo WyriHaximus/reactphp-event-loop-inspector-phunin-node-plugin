@@ -65,8 +65,8 @@ class Streams implements PluginInterface
         $this->configuration = new Configuration();
         $this->configuration->setPair('graph_category', 'event_loop');
         $this->configuration->setPair('graph_title', 'Streams');
-        $this->configuration->setPair('current_read_streams', 'Current Read Streams');
-        $this->configuration->setPair('current_write_streams', 'Current Write Streams');
+        $this->configuration->setPair('current_read_streams.label', 'Current Read Streams');
+        $this->configuration->setPair('current_write_streams.label', 'Current Write Streams');
 
         return \React\Promise\resolve($this->configuration);
     }
