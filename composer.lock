@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b8a098eb1111929c8028f0663e803858",
+    "hash": "df2dd88997eac2c076ef33629bbf0031",
     "content-hash": "f979a73a58c21c50ccd71bd59316fc14",
     "packages": [
         {
@@ -382,12 +382,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/reactphp-event-loop-inspector.git",
-                "reference": "6a52631463b8b5db7f42c20cc7f023485adf358e"
+                "reference": "f5fc1c61f038878465e4a6ad2b151eb979682658"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/reactphp-event-loop-inspector/zipball/6a52631463b8b5db7f42c20cc7f023485adf358e",
-                "reference": "6a52631463b8b5db7f42c20cc7f023485adf358e",
+                "url": "https://api.github.com/repos/WyriHaximus/reactphp-event-loop-inspector/zipball/f5fc1c61f038878465e4a6ad2b151eb979682658",
+                "reference": "f5fc1c61f038878465e4a6ad2b151eb979682658",
                 "shasum": ""
             },
             "require": {
@@ -418,7 +418,7 @@
                     "homepage": "http://wyrihaximus.net/"
                 }
             ],
-            "time": "2016-03-04 06:47:18"
+            "time": "2016-03-05 19:21:47"
         }
     ],
     "packages-dev": [
