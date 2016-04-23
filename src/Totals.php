@@ -84,7 +84,7 @@ class Totals implements PluginInterface
     public function getValues(): PromiseInterface
     {
         $counters = $this->infoProvider->getCounters();
-        $this->infoProvider->resetTicks();
+        $this->infoProvider->resetTotals();
         $storage = new \SplObjectStorage();
         $storage->attach(new Metric('streams_read_total', $counters['streams']['read']['total']));
         $storage->attach(new Metric('streams_total_total', $counters['streams']['total']['total']));
