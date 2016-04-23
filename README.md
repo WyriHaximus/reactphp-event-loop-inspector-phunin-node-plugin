@@ -1,10 +1,10 @@
 # Event Loop inspector Phunin Node Plugin
-[![Build Status](https://travis-ci.org/WyriHaximus/reactphp-eventloopinspector-phunin-node-plugin.png)](https://travis-ci.org/WyriHaximus/reactphp-eventloopinspector-phunin-node-plugin)
+[![Build Status](https://travis-ci.org/WyriHaximus/reactphp-event-loop-inspector-phunin-node-plugin.png)](https://travis-ci.org/WyriHaximus/reactphp-event-loop-inspector-phunin-node-plugin)
 [![Latest Stable Version](https://poser.pugx.org/WyriHaximus/react-event-loop-inspector-phunin-node-plugin/v/stable.png)](https://packagist.org/packages/WyriHaximus/react-event-loop-inspector-phunin-node-plugin)
 [![Total Downloads](https://poser.pugx.org/WyriHaximus/react-event-loop-inspector-phunin-node-plugin/downloads.png)](https://packagist.org/packages/WyriHaximus/react-event-loop-inspector-phunin-node-plugin)
-[![Code Coverage](https://scrutinizer-ci.com/g/WyriHaximus/reactphp-eventloopinspector-phunin-node-plugin/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/WyriHaximus/reactphp-eventloopinspector-phunin-node-plugin/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/WyriHaximus/reactphp-event-loop-inspector-phunin-node-plugin/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/WyriHaximus/reactphp-event-loop-inspector-phunin-node-plugin/?branch=master)
 [![License](https://poser.pugx.org/wyrihaximus/react-event-loop-inspector-phunin-node-plugin/license.png)](https://packagist.org/packages/wyrihaximus/react-event-loop-inspector-phunin-node-plugin)
-[![PHP 7 ready](http://php7ready.timesplinter.ch/WyriHaximus/reactphp-eventloopinspector-phunin-node-plugin/badge.svg)](https://travis-ci.org/WyriHaximus/reactphp-eventloopinspector-phunin-node-plugin)
+[![PHP 7 ready](http://php7ready.timesplinter.ch/WyriHaximus/reactphp-event-loop-inspector-phunin-node-plugin/badge.svg)](https://travis-ci.org/WyriHaximus/reactphp-event-loop-inspector-phunin-node-plugin)
 
 Monitor the ReactPHP event loop using PhuninNode
 
