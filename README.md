@@ -6,7 +6,7 @@
 [![License](https://poser.pugx.org/wyrihaximus/react-event-loop-inspector-phunin-node-plugin/license.png)](https://packagist.org/packages/wyrihaximus/react-event-loop-inspector-phunin-node-plugin)
 [![PHP 7 ready](http://php7ready.timesplinter.ch/WyriHaximus/reactphp-event-loop-inspector-phunin-node-plugin/badge.svg)](https://travis-ci.org/WyriHaximus/reactphp-event-loop-inspector-phunin-node-plugin)
 
-Monitor the ReactPHP event loop using PhuninNode
+[Monitor](https://github.com/WyriHaximus/reactphp-event-loop-inspector) the [ReactPHP event loop](https://github.com/reactphp/event-loop) using [`wyrihaximus/phunin-node`](https://github.com/wyrihaximus/PhuninNode)
 
 ## Installation ##
 
