@@ -2,11 +2,13 @@
 
 namespace WyriHaximus\React\Inspector\PhuninNode;
 
+use React\Promise\PromiseInterface;
 use WyriHaximus\PhuninNode\Configuration;
+use WyriHaximus\PhuninNode\Metric;
 use WyriHaximus\PhuninNode\Node;
 use WyriHaximus\PhuninNode\PluginInterface;
-use WyriHaximus\PhuninNode\Value;
 use WyriHaximus\React\Inspector\InfoProvider;
+use function React\Promise\resolve;
 
 class Streams implements PluginInterface
 {
@@ -40,7 +42,7 @@ class Streams implements PluginInterface
     /**
      * {@inheritdoc}
      */
-    public function getSlug()
+    public function getSlug(): string
     {
         return 'event_loop_streams';
     }
@@ -48,7 +50,7 @@ class Streams implements PluginInterface
     /**
      * {@inheritdoc}
      */
-    public function getCategorySlug()
+    public function getCategorySlug(): string
     {
         return 'event_loop';
     }
@@ -56,30 +58,30 @@ class Streams implements PluginInterface
     /**
      * {@inheritdoc}
      */
-    public function getConfiguration()
+    public function getConfiguration(): PromiseInterface
     {
         if ($this->configuration instanceof Configuration) {
-            return \React\Promise\resolve($this->configuration);
+            return resolve($this->configuration);
         }
 
         $this->configuration = new Configuration();
-        $this->configuration->setPair('graph_category',              'event_loop');
-        $this->configuration->setPair('graph_title',                 'Streams');
-        $this->configuration->setPair('current_read_streams.label',  'Current Read Streams');
+        $this->configuration->setPair('graph_category', 'event_loop');
+        $this->configuration->setPair('graph_title', 'Streams');
+        $this->configuration->setPair('current_read_streams.label', 'Current Read Streams');
         $this->configuration->setPair('current_write_streams.label', 'Current Write Streams');
 
-        return \React\Promise\resolve($this->configuration);
+        return resolve($this->configuration);
     }
 
     /**
      * {@inheritdoc}
      */
-    public function getValues()
+    public function getValues(): PromiseInterface
     {
         $counters = $this->infoProvider->getCounters();
         $storage = new \SplObjectStorage();
-        $storage->attach(new Value('current_read_streams',  $counters['streams']['read']['current']));
-        $storage->attach(new Value('current_write_streams', $counters['streams']['write']['current']));
-        return \React\Promise\resolve($storage);
+        $storage->attach(new Metric('current_read_streams', $counters['streams']['read']['current']));
+        $storage->attach(new Metric('current_write_streams', $counters['streams']['write']['current']));
+        return resolve($storage);
     }
 }
