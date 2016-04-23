@@ -16,6 +16,23 @@ To install via [Composer](http://getcomposer.org/), use the command below, it wi
 composer require wyrihaximus/react-event-loop-inspector-phunin-node-plugin 
 ```
 
+## Usage ##
+
+```php
+use WyriHaximus\React\Inspector\InfoProvider;
+use WyriHaximus\React\Inspector\PhuninNode\Streams;
+use WyriHaximus\React\Inspector\PhuninNode\Ticks;
+use WyriHaximus\React\Inspector\PhuninNode\Totals;
+
+// Info provider
+$infoProvider = new InfoProvider($decoratedLoop);
+
+// Add plugins
+$node->addPlugin(new Streams($infoProvider));
+$node->addPlugin(new Ticks($infoProvider));
+$node->addPlugin(new Totals($infoProvider));
+```
+
 ## Contributing ##
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
