@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace WyriHaximus\React\Inspector\PhuninNode;
 
@@ -80,8 +81,8 @@ class Streams implements PluginInterface
     {
         $counters = $this->infoProvider->getCounters();
         $storage = new \SplObjectStorage();
-        $storage->attach(new Metric('current_read_streams', $counters['streams']['read']['current']));
-        $storage->attach(new Metric('current_write_streams', $counters['streams']['write']['current']));
+        $storage->attach(new Metric('current_read_streams', (float)$counters['streams']['read']['current']));
+        $storage->attach(new Metric('current_write_streams', (float)$counters['streams']['write']['current']));
         return resolve($storage);
     }
 }

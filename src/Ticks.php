@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace WyriHaximus\React\Inspector\PhuninNode;
 
@@ -86,13 +87,13 @@ class Ticks implements PluginInterface
         $counters = $this->infoProvider->getCounters();
         $this->infoProvider->resetTicks();
         $storage = new \SplObjectStorage();
-        $storage->attach(new Metric('streams_read_ticks', $counters['streams']['read']['ticks']));
-        $storage->attach(new Metric('streams_total_ticks', $counters['streams']['total']['ticks']));
-        $storage->attach(new Metric('streams_write_ticks', $counters['streams']['write']['ticks']));
-        $storage->attach(new Metric('timers_once_ticks', $counters['timers']['once']['ticks']));
-        $storage->attach(new Metric('timers_periodic_ticks', $counters['timers']['periodic']['ticks']));
-        $storage->attach(new Metric('ticks_future_ticks', $counters['ticks']['future']['ticks']));
-        $storage->attach(new Metric('ticks_next_ticks', $counters['ticks']['next']['ticks']));
+        $storage->attach(new Metric('streams_read_ticks', (float)$counters['streams']['read']['ticks']));
+        $storage->attach(new Metric('streams_total_ticks', (float)$counters['streams']['total']['ticks']));
+        $storage->attach(new Metric('streams_write_ticks', (float)$counters['streams']['write']['ticks']));
+        $storage->attach(new Metric('timers_once_ticks', (float)$counters['timers']['once']['ticks']));
+        $storage->attach(new Metric('timers_periodic_ticks', (float)$counters['timers']['periodic']['ticks']));
+        $storage->attach(new Metric('ticks_future_ticks', (float)$counters['ticks']['future']['ticks']));
+        $storage->attach(new Metric('ticks_next_ticks', (float)$counters['ticks']['next']['ticks']));
         return resolve($storage);
     }
 }

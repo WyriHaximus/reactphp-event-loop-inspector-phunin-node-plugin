@@ -323,12 +323,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/PhuninNode.git",
-                "reference": "2c3d72c403e3398d87bb34e931e41b423015e438"
+                "reference": "2e6011642c82d44824caaa8835a038306ad44425"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/PhuninNode/zipball/2c3d72c403e3398d87bb34e931e41b423015e438",
-                "reference": "2c3d72c403e3398d87bb34e931e41b423015e438",
+                "url": "https://api.github.com/repos/WyriHaximus/PhuninNode/zipball/2e6011642c82d44824caaa8835a038306ad44425",
+                "reference": "2e6011642c82d44824caaa8835a038306ad44425",
                 "shasum": ""
             },
             "require": {
@@ -375,7 +375,7 @@
                 "reactphp",
                 "statistics"
             ],
-            "time": "2016-04-21 06:45:09"
+            "time": "2016-04-24 14:18:44"
         },
         {
             "name": "wyrihaximus/react-event-loop-inspector",
