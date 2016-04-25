@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "aa2224914815f7fe7d524e9cd6e0d4f8",
-    "content-hash": "438520a591d1434cc0325ad42b033c54",
+    "hash": "0c7c744139b8e78da649149e956a2a6b",
+    "content-hash": "4f379a5f95ef63176ef1516d52d01327",
     "packages": [
         {
             "name": "evenement/evenement",
@@ -379,16 +379,16 @@
         },
         {
             "name": "wyrihaximus/react-event-loop-inspector",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/reactphp-event-loop-inspector.git",
-                "reference": "b814f6e19cca090677f034fe00685db2ce68f26a"
+                "reference": "045c734a782770eb9131a0d798832e0a86ca08f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/reactphp-event-loop-inspector/zipball/b814f6e19cca090677f034fe00685db2ce68f26a",
-                "reference": "b814f6e19cca090677f034fe00685db2ce68f26a",
+                "url": "https://api.github.com/repos/WyriHaximus/reactphp-event-loop-inspector/zipball/045c734a782770eb9131a0d798832e0a86ca08f8",
+                "reference": "045c734a782770eb9131a0d798832e0a86ca08f8",
                 "shasum": ""
             },
             "require": {
@@ -397,7 +397,7 @@
                 "react/event-loop": "^0.4.1"
             },
             "require-dev": {
-                "phake/phake": "^2.1",
+                "phake/phake": "^2.3",
                 "phpunit/phpunit": "^4.0|^5.0",
                 "squizlabs/php_codesniffer": "^1.5.6",
                 "vectorface/dunit": "~2.0"
@@ -419,7 +419,7 @@
                     "homepage": "http://wyrihaximus.net/"
                 }
             ],
-            "time": "2016-04-03 21:41:25"
+            "time": "2016-04-25 07:41:43"
         }
     ],
     "packages-dev": [
@@ -1654,7 +1654,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "wyrihaximus/react-event-loop-inspector": 20,
         "wyrihaximus/phunin-node": 20
     },
     "prefer-stable": false,

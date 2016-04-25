@@ -10,7 +10,7 @@
     ],
     "require": {
         "php": "^7.0",
-        "wyrihaximus/react-event-loop-inspector": "dev-master",
+        "wyrihaximus/react-event-loop-inspector": "^1.0",
         "wyrihaximus/phunin-node": "dev-master"
     },
     "require-dev": {
