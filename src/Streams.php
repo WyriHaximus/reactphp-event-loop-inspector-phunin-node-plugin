@@ -59,6 +59,14 @@ class Streams implements PluginInterface
     /**
      * {@inheritdoc}
      */
+    public function getCapabilities(): array
+    {
+        return [];
+    }
+    
+    /**
+     * {@inheritdoc}
+     */
     public function getConfiguration(): PromiseInterface
     {
         if ($this->configuration instanceof Configuration) {
